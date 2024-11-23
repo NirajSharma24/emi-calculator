@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #555555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#additionalLoans {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loan-entry {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.loan-entry label {
+    flex: 1;
+}
+
+.loan-entry input {
+    flex: 2;
+}
+
+.loan-entry button {
+    flex: 0 0 auto;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.loan-entry button:hover {
+    background-color: #a71d2a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

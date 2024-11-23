@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator with Additional Loans</h1>
+        <form id="emiForm">
+            <label for="principal">Initial Principal Amount (₹):</label>
+            <input type="number" id="principal" required>
+
+            <label for="interestRate">Annual Interest Rate (%):</label>
+            <input type="number" id="interestRate" step="0.01" required>
+
+            <label for="tenure">Loan Tenure (Years):</label>
+            <input type="number" id="tenure" required>
+
+            <label for="startDate">Start Date:</label>
+            <input type="month" id="startDate" required>
+
+            <button type="submit">Calculate EMI</button>
+        </form>
+
+        <h2>Add New Loans</h2>
+        <div id="additionalLoans">
+            <button id="addLoan">Add New Loan</button>
+        </div>
+
+        <table id="emiTable">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>EMI (₹)</th>
+                    <th>Interest (₹)</th>
+                    <th>Principal (₹)</th>
+                    <th>Outstanding Principal (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
